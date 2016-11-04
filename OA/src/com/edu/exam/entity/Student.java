@@ -13,12 +13,12 @@ public class Student {
 	private String natives ;
 	private String phone ;
 	private String school ;
-	private Classes classes ;
-	private Type type ;
 	private String status;
 	private Date enter_time ;
 	private String file ;
+	private Classes classes ;
 	private Date birthday ;
+	private Type type ;
 	
 	
 }
