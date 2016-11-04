@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.exam.mapper.StudentMapper">
+
+	<select id="validateStudent" resultMap="studentMap"  >
+		select * from student_t  where username=#{username} AND password=#{password}
+	</select>
+<resultMap type="com.edu.exam.entity.Student" id="studentMap">
+<id property="id" column="id"/>
+<result property="name" column="name"/>
+<collection property="listTeacher" ofType="Teacher">
+<id property="teacher_id" column="teacher_id"/>
+<result property="teacher_name" column="teacher_name"/>
+<result property="teacher_age" column="teacher_age"/>
+</collection>
+</resultMap>
+</mapper>

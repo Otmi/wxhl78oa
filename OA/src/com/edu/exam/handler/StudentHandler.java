@@ -18,4 +18,5 @@ public class StudentHandler {
 		
 		return "student/historical";
 	}
+	
 }

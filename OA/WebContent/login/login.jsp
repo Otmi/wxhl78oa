@@ -20,17 +20,17 @@
     <div class="loginBox">        
         <div class="loginHead">
         </div>
-        <form class="form-horizontal" action="index.html" method="POST">            
+        <form class="form-horizontal" action="${pageContext.request.contextPath }/login" method="POST">            
             <div class="control-group">
                 <label for="inputEmail">账号</label>                
-                <input type="text" id="inputEmail"/>
+                <input type="text" name="username"/>
             </div>
             <div class="control-group">
                 <label for="inputPassword">密码</label>                
-                <input type="password" id="inputPassword"/>                
+                <input type="password" name="password"/>                
             </div>
             <div class="form-actions">
-                <button type="submit" class="btn btn-block">登录</button>
+                <button type="submit" class="btn btn-block" >登录</button>
             </div>
         </form>        
         
