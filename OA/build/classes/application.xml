@@ -19,7 +19,7 @@
 
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="url" value="jdbc:mysql://localhost:3306/wangshuo"></property>
+		<property name="url" value="jdbc:mysql://192.168.11.214:3306/oa"></property>
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value="123456"></property>
